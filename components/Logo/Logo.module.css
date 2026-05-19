@@ -1,0 +1,18 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--logo-scale, 1) * 6px);
+  color: var(--color-text);
+}
+
+.mark {
+  width: calc(var(--logo-scale, 1) * 18px);
+  height: calc(var(--logo-scale, 1) * 18px);
+  flex-shrink: 0;
+}
+
+.wordmark {
+  width: calc(var(--logo-scale, 1) * 49px);
+  height: calc(var(--logo-scale, 1) * 11px);
+  flex-shrink: 0;
+}

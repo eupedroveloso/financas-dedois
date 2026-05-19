@@ -1,0 +1,35 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  padding-top: var(--header-height);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-bg-overlay);
+  z-index: 40;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  margin-left: var(--sidebar-width);
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,95 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.group {
+  scroll-margin-top: calc(var(--header-height) + var(--space-6));
+}
+
+.groupHeader {
+  margin-bottom: var(--space-5);
+}
+
+.groupTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  line-height: var(--leading-tight);
+}
+
+.groupDesc {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.swatches {
+  border: var(--border-1) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg);
+}
+
+.swatches > * {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: var(--border-1) solid var(--color-border-subtle);
+}
+
+.swatches > *:last-child {
+  border-bottom: none;
+}
+
+.note {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-bg-muted);
+  border: var(--border-1) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin: 0;
+  line-height: var(--leading-relaxed);
+}
+
+.note code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background-color: var(--color-code-bg);
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+}
+
+.inlineCode {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-code-bg);
+  color: var(--color-text-secondary);
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+}
+
+.semanticSections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.semanticGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.semanticGroupTitle {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  line-height: var(--leading-tight);
+}
